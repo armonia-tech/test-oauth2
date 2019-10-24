@@ -3,7 +3,7 @@ package models
 import (
 	"time"
 
-	"gopkg.in/oauth2.v3"
+	oauth2 "github.com/armonia-tech/test-oauth2"
 )
 
 // NewToken create to token model instance

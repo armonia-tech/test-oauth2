@@ -7,13 +7,13 @@ import (
 	"net/url"
 	"testing"
 
+	oauth2 "github.com/armonia-tech/test-oauth2"
+	errors "github.com/armonia-tech/test-oauth2/errors"
+	manage "github.com/armonia-tech/test-oauth2/manage"
+	models "github.com/armonia-tech/test-oauth2/models"
+	server "github.com/armonia-tech/test-oauth2/server"
+	store "github.com/armonia-tech/test-oauth2/store"
 	"github.com/gavv/httpexpect"
-	"gopkg.in/oauth2.v3"
-	"gopkg.in/oauth2.v3/errors"
-	"gopkg.in/oauth2.v3/manage"
-	"gopkg.in/oauth2.v3/models"
-	"gopkg.in/oauth2.v3/server"
-	"gopkg.in/oauth2.v3/store"
 )
 
 var (

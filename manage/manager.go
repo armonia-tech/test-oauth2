@@ -3,10 +3,10 @@ package manage
 import (
 	"time"
 
-	"gopkg.in/oauth2.v3"
-	"gopkg.in/oauth2.v3/errors"
-	"gopkg.in/oauth2.v3/generates"
-	"gopkg.in/oauth2.v3/models"
+	oauth2 "github.com/armonia-tech/test-oauth2"
+	errors "github.com/armonia-tech/test-oauth2/errors"
+	generates "github.com/armonia-tech/test-oauth2/generates"
+	models "github.com/armonia-tech/test-oauth2/models"
 )
 
 // NewDefaultManager create to default authorization management instance

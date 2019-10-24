@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"gopkg.in/oauth2.v3"
+	oauth2 "github.com/armonia-tech/test-oauth2"
 )
 
 // NewClientStore create client store

@@ -1,7 +1,7 @@
 package server
 
 import (
-	"gopkg.in/oauth2.v3"
+	oauth2 "github.com/armonia-tech/test-oauth2"
 )
 
 // SetTokenType token type

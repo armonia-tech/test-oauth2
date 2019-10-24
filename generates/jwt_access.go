@@ -2,15 +2,16 @@ package generates
 
 import (
 	"encoding/base64"
+	"log"
 	"strings"
 	"time"
 
 	errs "errors"
 
+	oauth2 "github.com/armonia-tech/test-oauth2"
+	errors "github.com/armonia-tech/test-oauth2/errors"
+	uuid "github.com/armonia-tech/test-oauth2/utils/uuid"
 	"github.com/dgrijalva/jwt-go"
-	"gopkg.in/oauth2.v3"
-	"gopkg.in/oauth2.v3/errors"
-	"gopkg.in/oauth2.v3/utils/uuid"
 )
 
 // JWTAccessClaims jwt claims
@@ -50,6 +51,8 @@ func (a *JWTAccessGenerate) Token(data *oauth2.GenerateBasic, isGenRefresh bool)
 			ExpiresAt: data.TokenInfo.GetAccessCreateAt().Add(data.TokenInfo.GetAccessExpiresIn()).Unix(),
 		},
 	}
+
+	log.Println(claims)
 
 	token := jwt.NewWithClaims(a.SignedMethod, claims)
 	var key interface{}

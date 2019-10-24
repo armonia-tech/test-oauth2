@@ -5,8 +5,8 @@ import (
 	"encoding/base64"
 	"strings"
 
-	"gopkg.in/oauth2.v3"
-	"gopkg.in/oauth2.v3/utils/uuid"
+	oauth2 "github.com/armonia-tech/test-oauth2"
+	uuid "github.com/armonia-tech/test-oauth2/utils/uuid"
 )
 
 // NewAuthorizeGenerate create to generate the authorize code instance

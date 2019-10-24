@@ -8,14 +8,14 @@ import (
 	"os"
 	"time"
 
+	errors "github.com/armonia-tech/test-oauth2/errors"
+	generates "github.com/armonia-tech/test-oauth2/generates"
+	manage "github.com/armonia-tech/test-oauth2/manage"
+	models "github.com/armonia-tech/test-oauth2/models"
+	server "github.com/armonia-tech/test-oauth2/server"
+	store "github.com/armonia-tech/test-oauth2/store"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/go-session/session"
-	"gopkg.in/oauth2.v3/errors"
-	"gopkg.in/oauth2.v3/generates"
-	"gopkg.in/oauth2.v3/manage"
-	"gopkg.in/oauth2.v3/models"
-	"gopkg.in/oauth2.v3/server"
-	"gopkg.in/oauth2.v3/store"
 )
 
 func main() {

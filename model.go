@@ -46,5 +46,8 @@ type (
 		SetRefreshCreateAt(time.Time)
 		GetRefreshExpiresIn() time.Duration
 		SetRefreshExpiresIn(time.Duration)
+
+		GetJti() string
+		SetJti(string)
 	}
 )

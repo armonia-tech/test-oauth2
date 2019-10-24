@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"time"
 
+	oauth2 "github.com/armonia-tech/test-oauth2"
+	models "github.com/armonia-tech/test-oauth2/models"
+	uuid "github.com/armonia-tech/test-oauth2/utils/uuid"
 	"github.com/tidwall/buntdb"
-	"gopkg.in/oauth2.v3"
-	"gopkg.in/oauth2.v3/models"
-	"gopkg.in/oauth2.v3/utils/uuid"
 )
 
 // NewMemoryTokenStore create a token store instance based on memory
