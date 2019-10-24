@@ -46,6 +46,7 @@ func (a *JWTAccessGenerate) Token(data *oauth2.GenerateBasic, isGenRefresh bool)
 		StandardClaims: jwt.StandardClaims{
 			Audience:  data.Client.GetID(),
 			Subject:   data.UserID,
+			Id:        data.TokenInfo.GetJti(),
 			ExpiresAt: data.TokenInfo.GetAccessCreateAt().Add(data.TokenInfo.GetAccessExpiresIn()).Unix(),
 		},
 	}

@@ -26,6 +26,7 @@ type Token struct {
 	Refresh          string        `bson:"Refresh"`
 	RefreshCreateAt  time.Time     `bson:"RefreshCreateAt"`
 	RefreshExpiresIn time.Duration `bson:"RefreshExpiresIn"`
+	Jti              string        `bson:"Jti"`
 }
 
 // New create to token model instance
@@ -161,4 +162,14 @@ func (t *Token) GetRefreshExpiresIn() time.Duration {
 // SetRefreshExpiresIn the lifetime in seconds of the refresh token
 func (t *Token) SetRefreshExpiresIn(exp time.Duration) {
 	t.RefreshExpiresIn = exp
+}
+
+// GetJti jti
+func (t *Token) GetJti() string {
+	return t.Jti
+}
+
+// SetJti jti
+func (t *Token) SetJti(jti string) {
+	t.Jti = jti
 }
