@@ -14,7 +14,7 @@ import (
 	models "github.com/armonia-tech/test-oauth2/models"
 	server "github.com/armonia-tech/test-oauth2/server"
 	store "github.com/armonia-tech/test-oauth2/store"
-	"github.com/dgrijalva/jwt-go"
+	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/go-session/session"
 )
 

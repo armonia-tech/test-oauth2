@@ -8,7 +8,7 @@ import (
 	oauth2 "github.com/armonia-tech/test-oauth2"
 	generates "github.com/armonia-tech/test-oauth2/generates"
 	models "github.com/armonia-tech/test-oauth2/models"
-	"github.com/dgrijalva/jwt-go"
+	jwt "github.com/dgrijalva/jwt-go"
 
 	. "github.com/smartystreets/goconvey/convey"
 )
