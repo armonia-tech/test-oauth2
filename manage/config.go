@@ -31,9 +31,9 @@ type RefreshingConfig struct {
 // default configs
 var (
 	DefaultCodeExp               = time.Minute * 10
-	DefaultAuthorizeCodeTokenCfg = &Config{AccessTokenExp: time.Hour * 3, RefreshTokenExp: time.Hour * 24 * 3, IsGenerateRefresh: true}
+	DefaultAuthorizeCodeTokenCfg = &Config{AccessTokenExp: time.Hour * 2, RefreshTokenExp: time.Hour * 24 * 3, IsGenerateRefresh: true}
 	DefaultImplicitTokenCfg      = &Config{AccessTokenExp: time.Hour * 1}
-	DefaultPasswordTokenCfg      = &Config{AccessTokenExp: time.Hour * 3, RefreshTokenExp: time.Hour * 24 * 7, IsGenerateRefresh: true}
-	DefaultClientTokenCfg        = &Config{AccessTokenExp: time.Hour * 3}
+	DefaultPasswordTokenCfg      = &Config{AccessTokenExp: time.Hour * 2, RefreshTokenExp: time.Hour * 24 * 7, IsGenerateRefresh: true}
+	DefaultClientTokenCfg        = &Config{AccessTokenExp: time.Hour * 2}
 	DefaultRefreshTokenCfg       = &RefreshingConfig{IsGenerateRefresh: true, IsRemoveAccess: true, IsRemoveRefreshing: true}
 )
